@@ -1,0 +1,21 @@
+(lang dune 3.0)
+(name mnisc)
+(version 0.1.0)
+
+(generate_opam_files true)
+
+(source (github username/mnisc))
+(authors "MNISC Team")
+(maintainers "MNISC Team")
+
+(package
+ (name mnisc)
+ (synopsis "MNISC Accelerator Compiler")
+ (description "Compiler and AST simulator for MNISC low-bit neural network accelerator")
+ (depends
+  (ocaml (>= 4.14))
+  (yojson (>= 2.0))
+  (bigarray (>= 5.0))
+  (dune (>= 3.0))))
+
+(using menhir 2.1)

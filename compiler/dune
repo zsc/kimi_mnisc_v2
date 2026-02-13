@@ -1,0 +1,26 @@
+(executable
+ (public_name mnisc)
+ (name main)
+ (libraries yojson bigarray)
+ (flags (:standard -w -27-32-33-26-39))
+ (modules
+   eu_isa
+   ast_ir
+   safetensor
+   tiling
+   lower
+   ast_sim
+   main))
+
+(executable
+ (name test_mnisc)
+ (libraries yojson bigarray)
+ (flags (:standard -w -27-32-33-26-39))
+ (modules
+   eu_isa
+   ast_ir
+   safetensor
+   tiling
+   lower
+   ast_sim
+   test_mnisc))

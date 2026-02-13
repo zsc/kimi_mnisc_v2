@@ -1,0 +1,55 @@
+# Build artifacts
+_build/
+obj_dir/
+*.exe
+*.o
+*.a
+*.d
+
+# Generated files
+*.bin
+*.safetensors
+*.vcd
+*.log
+
+# OCaml
+*.cmi
+*.cmo
+*.cmx
+*.cma
+*.cmxa
+*.annot
+
+# Verilator
+Veu_top*
+!Veu_top.h
+!Veu_top.cpp
+
+# Python
+__pycache__/
+*.pyc
+*.pyo
+.Python
+*.egg-info/
+dist/
+build/
+
+# IDEs
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Temporary files
+*.tmp
+*.temp
+
+# Generated test data
+program.bin
+program_meta.json
+generate_test_data.py
